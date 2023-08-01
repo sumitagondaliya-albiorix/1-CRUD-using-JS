@@ -7,7 +7,7 @@ Perform the CRUD Operation using HTML, CSS & Javascript.
 
 Form must be dynamic and should displays data in to table form according to operation i.e. Insert, Update or Delete.
 
-Validations and action is mandatory in fields which is DOB, Submit buttorn and Gender.
+Validations and action is mandatory in fields which is DOB, Submit button and Gender.
 
 For storage you have to use local storage of browser where your data should be view as key-value pair.
 
