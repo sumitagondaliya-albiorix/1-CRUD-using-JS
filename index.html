@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table, tr {
+          border: 1px solid black;
+          border-collapse: collapse
+        }
+        </style>
+</head>
+
+<body>
+    <!-- Here,Fieldset is used for grouping the related information in a box  -->
+    <fieldset style="width:700px;"> 
+        <!-- Legend is created for caption of fieldset e.g. name of block  -->
+        <legend>
+            <h1>Personal Detail</h1>
+        </legend>
+        <!--  Form id is global attribute  -->
+        <!-- By providing id to form allows access to that form for scripting and styling -->
+        <form id="form">
+            <label>First Name</label>
+            <input type="text" placeholder="First name " id="fname" name="fname"><br><br>
+            <!-- name attribute is name of that input element ,Which is used when form data is submitted.
+             It will pass a value of that input element after submission. -->
+            <label>Last Name</label>
+            <input type="text" placeholder="Last name " id="lname" name="lname">
+            <br>
+            <br>
+            <label>Gender</label><br>
+            <!-- Here, value attribute specifies the value of an <input> element,and refers the submitted value of gender  -->
+            <label>Male</label>
+            <input type="radio" name="gender" value="male">
+            <label>Female</label>
+            <input type="radio" name="gender" value="male">
+            <br>
+            <br>
+            <label>Hobbies</label>
+            <br>
+            <label>Writing</label>
+            <input type="checkbox" id="writing" name="writing"><br>
+            <label>Reading</label>
+            <input type="checkbox" id="reading" name="reading"><br>
+            <label>Creativity</label>
+            <input type="checkbox" id="creativity" name="creativity"><br>
+            <label>Travelling</label>
+            <input type="checkbox" id="travelling" name="travelling"><br>
+            <br>
+            <label>Address</label>
+            <textarea name="address" form="form" placeholder="Enter your address here"></textarea>
+            <br>
+            <!-- <input type="textare" placeholder="First name "id="name" name="name"> -->
+            <label>Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+            <br>
+            <br>
+            <label for="country"> Choose a Country</label>
+            <select name="country" id="country"><br>
+                <option value="india">India</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="australia">Australia</option><br><br>
+                <br>
+                <br><input type="button" value="Submit" id="btn" onclick="Submit()">
+                <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+    <br>
+
+    <div id="msg"></div><br><br>
+     <!-- Date from local storage will shown up to this box -->
+    <fieldset>
+        <legend><b>Data from Local storage</b></legend>
+        <table id="details-table" style="width:50%">
+            <tr>
+                <td class=".col">First Name</td>
+                <td class=".col">Last Name</td>
+                <td class=".col">Date of Birth</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+<script src="script.js"></script>
+
+</html>
